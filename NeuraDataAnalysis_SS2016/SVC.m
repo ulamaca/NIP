@@ -25,5 +25,5 @@ wSVM = ( (a.*xClass)' * xData )';
 eps = 10^-5;
 indexSVs = find(a>eps);% which of input are support vectors
 bSVM = xClass(indexSVs(1)) - xData(indexSVs(1),:) * wSVM;
-classSVM = 0.5 * sign(xData * wSVM + bSVM) + 1.5 ; % >=1 ; <= -1, what if slack is introduced? (*1 to be correct)
+classSVM = 0.5 * sign(xData * wSVM + bSVM) + 1.5 ; % 1 for original class -1, vice versa
 
