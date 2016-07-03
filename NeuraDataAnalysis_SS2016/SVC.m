@@ -1,7 +1,8 @@
 function [wSVM, bSVM, a, indexSVs, classSVM] = SVC(xData,xClass,C)
 % support vector classification
     % to-be-done1: automatically selecting best C by CV
-
+    % to-be-done2: Kernelization!!
+    
 if nargin<3
     C = 10; % penalization parameters (to tune by CV)
 end
